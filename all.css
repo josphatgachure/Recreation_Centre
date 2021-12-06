@@ -1,0 +1,32 @@
+
+.header{
+    position:fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 10000;
+    Background:grey;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 9%;
+    height: 10vh;
+    float: left;
+    margin-bottom: 20px; ;
+
+}
+.logo{
+    font-weight: bolder;
+    color: purple;
+    font-size: 2.5rem; 
+}
+.header.logo span{
+    color: dodgerblue;
+    font-size: 12px;
+}
+.header .navbar a{
+    font-size: 1.7rem;
+    margin-left: 2rem;
+    color: white;
+}
+.header .navbar a:hover{
+    color: lightblue;
+}

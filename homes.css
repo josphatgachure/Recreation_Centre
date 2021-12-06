@@ -1,0 +1,240 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;600;700&display=swap');
+
+ :root{
+     --main-color:blue;
+ } 
+*{
+ font-family: 'nunito',sans-serif;
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ text-decoration: none;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar
+{
+    width: 1rem;
+}
+html::-webkit-scrollbar-track{
+    background: grey;
+}
+html::-webkit-scrollbar-thumb{
+    background: var(--main-color);
+    border-radius: 5rem;
+}
+body{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    box-sizing: border-box;
+    background-size: cover;
+
+}
+.header{
+    position:fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 10000;
+    Background:grey;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 9%;
+}
+.logo{
+    font-weight: bolder;
+    color: white;
+    font-size: 2.5rem; 
+}
+.header.logo span{
+    color: dodgerblue;
+    font-size: 12px;
+}
+.header .navbar a{
+    font-size: 1.7rem;
+    margin-left: 2rem;
+    color:white;
+}
+.header .navbar a:hover{
+    color: var(--main-color);
+}
+#menu-bars{
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+
+.box{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    transform-style: preserve-3d;
+    animation: animate 20s linear infinite;
+    
+}
+
+@keyframes animate
+{
+    0%{
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    100%{
+        transform: perspective(1000px) rotateY(360deg); 
+    }
+
+}
+.box span{
+    position: absolute;
+    width: 120%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i)*45deg))translateZ(400px);
+    
+}
+.box span img{
+    margin-top: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110%;
+    object-fit: cover;
+    height: 100%;
+    
+}
+.content{
+    margin-top: 600px;
+    margin-left: 5.5px;
+    font-size: 30px;
+    color: purple;
+    position:absolute;
+    animation: change 2s infinite;
+}
+@keyframes change {
+    25%{
+        color: red;
+    }
+    50%{
+        color: sandybrown;
+    }
+    75%{
+        color: seashell;
+    }
+    100%{
+        color: mediumaquamarine;
+    }
+    
+}
+#para{
+    position: absolute;
+    font-family: sans-serif;
+    padding: 60px;
+    font-size: 25px;
+    color: lightgreen;
+}
+.button{
+    position: absolute;
+    background: yellow;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    border:3px solid white;
+    border-radius: 30%;
+    font-size:15px;
+    top:90%;
+    bottom:5%;
+    right:20%;
+    left:0%;
+    transition-duration: o.5s;
+}
+
+.button:hover{
+    background-color: rgb(189, 189, 69);
+    color:black;
+}
+
+@media(max-width:991px){
+    html{
+       font-size:55%; 
+   }
+   .header{
+       padding: 1.5rem 2rem;
+    } 
+   } 
+   @media(max-width:768px){
+       #menu-bars{
+       display:initial;
+       }
+       .header .navbar{
+           position: absolute;
+           top:0; left: 0; right: 0;
+           border-top: .1rem solid black;
+           background: indianred;
+       }
+       .header .navbar a{
+           display: flex;
+           background:grey;
+           border-radius: .5rem;
+           padding: 1.3rem;
+           margin: 1.3rem;
+           font-size: 2rem;
+       }
+       .box{
+        position: relative;
+        width: 250px;
+        height: 250px;
+    
+   }
+   .box span{
+
+    width: 120%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    
+}
+.box span img{
+    margin-top: 100px;
+    top: 0;
+    left: 0;
+    width: 110%;
+    object-fit: cover;
+    height: 100%;
+    
+}
+.content{
+    margin-top: 600px;
+    margin-left: 5.5px;
+    font-size: 22px;
+}
+}
+#para{
+    padding: 60px;
+    font-size: 25px;
+}
+.button{
+    border-radius: 30%;
+    font-size:15px;
+    top:90%;
+    bottom:5%;
+    right:20%;
+    left:20%;
+}
+
+   }
+   @media(max-width:450px){
+       html{
+          font: size 50px; 
+      }
+      
+   }

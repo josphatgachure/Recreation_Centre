@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gallerys.css">
+    <link rel="stylesheet" href="all.css">
+    <title>Gallery page</title>
+</head>
+<body>
+    <header class="header">
+        <h3> <a href="#" class="logo"><span>JOS</span>Eventures</a></h3>
+     <nav class="navbar">
+         <a href="#home">Home</a>
+         <a href="About Us.html">About</a>
+         <a href="Gallery.html">Gallery</a>
+         <a href="Event.html">Events</a>
+         <a href="contactus.html">Contacts</a>
+  </nav>
+    </header>
+ 
+ <div class="container">
+     <div class="image">
+         <P id="paragraph"> Our Sumptuous dishes drips with greatness<br>
+        we serve a SIX COURSE MEAL that coupled with wine as attache</P>
+         <img src="photos/img-1.jpg" width="700px" height="700px" alt="">
+     </div>
+     <div class="image">
+        <P id="paragraph"> YOGA FOR HEALTH<br>
+            our dancing studio is even in session with different activities</P>
+        <img src="photos/img-2.jpg" width="700px" height="600px"alt="">
+    </div>
+    <div class="image">
+        <P id="paragraph">KING BEDS AND HAMMOCKS<br>
+            Be lured to sleep by a warm breeze.  Bedrooms location makes<br> your nights memorable</P>
+        <img src="photos/img-3.jpg"width="700px" height="600px" alt="">
+    </div>
+    <div class="image">
+        <P id="paragraph"> LOUD AND COOL SILENCE<br>
+            peace surpassing understanding in our living rooms.<br>
+        cordial for all walks of life</P>
+        <img src="photos/img-4.jpg"width="700px" height="600px" alt="">
+    </div><div class="image">
+        <P id="paragraph"> SPAS AND JACUZZI<br>
+            Come spend time of your life in the warm jacuzzis</P>
+        <img src="photos/img-5.jpg"width="700px" height="600px" alt="">
+    </div>
+    <div class="image">
+        <P id="paragraph">HEALTH IS WEALTH <br>
+            Exercise with vast amount of resources
+            Be guided by<br> professional instructors </P>
+        <img src="photos/img-6.jpg" width="700px" height="600px"alt="">
+    </div>
+    <div class="image">
+        <P id="paragraph">IRRESISTIBLE CITY VIEW <br>
+           Spend your evening viewing he city at the comfort of your room </P>
+        <img src="photos/img-7.jpg"width="700px" height="600px" alt="">
+    </div>
+    
+    <div class="button">
+        <a onclick="nextimg(-1)" class="prev">&#10094;</a>
+        <a onclick="nextimg(1)" class="next">&#10095;</a>
+    </div>
+
+     <div class="dots">
+         <span class="dot" onclick="currentSlide(1)"></span>
+         <span class="dot" onclick="currentSlide(2)"></span>
+         <span class="dot" onclick="currentSlide(3)"></span>
+         <span class="dot" onclick="currentSlide(4)"></span>
+         <span class="dot" onclick="currentSlide(5)"></span>
+         <span class="dot" onclick="currentSlide(6)"></span>
+         <span class="dot" onclick="currentSlide(7)"></span>
+     </div>
+    
+
+ </div>
+ <script src="dynamic.js"></script>
+    
+</body>
+</html>
